@@ -1,5 +1,5 @@
 .Phonetic {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .Phonetic a {
@@ -14,7 +14,7 @@
 }
 
 .Phonetic a:hover {
-  background: #9670f4;
+  background: #5c5470;
   color: white;
 }
 
