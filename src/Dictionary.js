@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Dictionary.css";
 import Results from "./Results";
+import "./Dictionary.css";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
-  let [results, setResuts] = useState(null);
+  let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
-    setResuts(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function search() {
@@ -17,11 +17,11 @@ export default function Dictionary(props) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
-}
 
-function handleSubmit(event) {
-  event.preventDefault();
-  search();
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
@@ -45,7 +45,7 @@ function handleSubmit(event) {
             />
           </form>
           <div className="hint">
-            Suggested keywords: sunrise, star, wonderful, dream, love...{" "}
+            Suggested words: vintage, wine, romantic, live...
           </div>
         </section>
         <Results results={results} />
@@ -53,6 +53,6 @@ function handleSubmit(event) {
     );
   } else {
     load();
-    return "Loading...";
+    return "Loading";
   }
 }
