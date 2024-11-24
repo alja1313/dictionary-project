@@ -5,15 +5,15 @@
 }
 
 .Dictionary section {
-  background: #e7eaf6;
+  background: #d3d6db;
   border-radius: 6px;
-  box-shadow: 1px 10px 20px rgba(0, 0, 0, 11%);
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 11%);
   padding: 30px;
   margin: 20px 0;
 }
 
 .Dictionary input {
-  color: #393e46;
+  color: #303841;
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 6px;

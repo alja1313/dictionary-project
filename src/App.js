@@ -14,16 +14,15 @@ export default function App() {
         </main>
         <footer className="App-footer">
           <small>
-            This applications was built by <strong>Olga Slahota</strong>. <br />{" "}
+            This application was built by <strong>Olga Slahota</strong> <br />{" "}
             It is open-sourced on{" "}
             <a
               href="https://github.com/alja1313/dictionary-project"
               target="blank"
               rel="noreferrer"
             >
-              GitHub.
+              GitHub
             </a>{" "}
-            ⭐
           </small>
         </footer>
       </div>
